@@ -1,9 +1,0 @@
-{
-  "name": "MultiRepo Manager",
-  "repos": [
-    "git@github.com:MultiRepo-Manager/docker.git",
-    "git@github.com:MultiRepo-Manager/cli.git",
-    "git@github.com:MultiRepo-Manager/frontend.git",
-    "git@github.com:MultiRepo-Manager/backend.git"
-  ]
-}

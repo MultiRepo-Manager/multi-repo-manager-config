@@ -1,0 +1,22 @@
+name: "MultiRepo Workspace"
+repos:
+  - path: "ui"
+    git: "git@github.com:MultiRepo-Workspace/ui.git"
+  - path: "cli"
+    git: "git@github.com:MultiRepo-Workspace/cli.git"
+build:
+  - path: "ui"
+    execute:
+      - kind: cmd
+        name: npm
+        args:
+          - install
+      - kind: cmd
+        name: npm
+        args:
+          - run
+          - build
+  - path: "cli"
+    execute:
+      - kind: script
+        name: build.sh
