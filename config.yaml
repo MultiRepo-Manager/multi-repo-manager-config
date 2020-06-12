@@ -25,3 +25,5 @@ build:
 config:
   # git pull || hub sync
   pull: hub
+  port: 8080
+  daemon: false
