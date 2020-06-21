@@ -3,9 +3,9 @@ name: "MultiRepo Workspace"
 pull: hub
 port: 8080
 repos:
-  - path: "ui"
+  ui:
     git: "git@github.com:MultiRepo-Workspace/ui.git"
     branch: "develop"
-  - path: "cli"
+  cli:
     git: "git@github.com:MultiRepo-Workspace/cli.git"
     branch: "develop"
