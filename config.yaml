@@ -1,4 +1,7 @@
 name: "MultiRepo Workspace"
+# git pull || hub sync
+pull: hub
+port: 8080
 repos:
   - path: "ui"
     git: "git@github.com:MultiRepo-Workspace/ui.git"
@@ -6,24 +9,3 @@ repos:
   - path: "cli"
     git: "git@github.com:MultiRepo-Workspace/cli.git"
     branch: "develop"
-build:
-  - path: "ui"
-    execute:
-      - kind: cmd
-        name: npm
-        args:
-          - install
-      - kind: cmd
-        name: npm
-        args:
-          - run
-          - build
-  - path: "cli"
-    execute:
-      - kind: script
-        name: build.sh
-config:
-  # git pull || hub sync
-  pull: hub
-  port: 8080
-  daemon: false
