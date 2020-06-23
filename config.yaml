@@ -1,7 +1,4 @@
 name: "MultiRepo Workspace"
-# git pull || hub sync
-pull: hub
-port: 8080
 repos:
   ui:
     git: "git@github.com:MultiRepo-Workspace/ui.git"
