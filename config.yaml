@@ -3,6 +3,11 @@ repos:
   cli:
     branch: develop
     git: git@github.com:MultiRepo-Workspace/cli.git
+    build:
+      - ./build.sh
   ui:
     branch: develop
     git: git@github.com:MultiRepo-Workspace/ui.git
+    build:
+      - npm i
+      - npm run build
