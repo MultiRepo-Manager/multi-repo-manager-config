@@ -1,8 +1,8 @@
-name: "MultiRepo Workspace"
+name: MultiRepo Workspace
 repos:
-  ui:
-    git: "git@github.com:MultiRepo-Workspace/ui.git"
-    branch: "develop"
   cli:
-    git: "git@github.com:MultiRepo-Workspace/cli.git"
-    branch: "develop"
+    branch: develop
+    git: git@github.com:MultiRepo-Workspace/cli.git
+  ui:
+    branch: develop
+    git: git@github.com:MultiRepo-Workspace/ui.git
